@@ -1,0 +1,22 @@
+[project]
+name = "agougif"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ben Evans", email = "Benjamin.Evans@ioz.ac.uk" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "agoutix>=1.1.0",
+    "httpx>=0.28.1",
+    "pillow>=11.2.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+agougif = "agougif:main"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
